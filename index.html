@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Wallace Simulation</title>
+
+        <style>
+
+            body{
+                background-color: yellow;
+                text-align: center;
+            }
+
+            div {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+            <h1>Wallace Simulation</h1>
+            <div>How many Trips?</div>
+            <br/>
+            <input id="runTimes"><br><br>
+            <button onclick="run()">Run!</button>
+    
+            <div id="printDiv"></div>
+    </body>
+
+
+    <script>
+        
+
+        function run() {
+
+            
+var n0 = 0
+var n1 = 0
+var n2 = 0
+var n3 = 0
+var n4 = 0
+var n4 = 0
+var n5 = 0
+var n6 = 0
+var n7 = 0
+var n8 = 0
+var n9 = 0
+var n10 = 0
+
+var i = 1
+
+var iterations = document.getElementById("runTimes").value
+while (i < iterations) {
+
+    var times = 0
+    var temp = 0
+    while (times < 10) {
+        var random = Math.floor(Math.random() * 2)
+        if (random == 1){
+            temp = temp + 1
+            
+        }
+        times = times + 1
+    }
+    if (temp == 0) {
+        n0 = n0 + 1
+    }
+    if (temp == 1){
+        n1 = n1 + 1
+    }
+    if (temp == 2){
+        n2 = n2 + 1
+    }
+    if (temp == 3){
+        n3 = n3 + 1
+    }
+    if (temp == 4){
+        n4 = n4 + 1
+    }
+    if (temp == 5){
+        n5 = n5 + 1
+    }
+    if (temp == 6){
+        n6 = n6 + 1
+    }
+    if (temp == 7){
+        n7 = n7 + 1
+    }
+    if (temp == 8){
+        n8 = n8 + 1
+    }
+    if (temp == 9){
+        n9 = n9 + 1
+    }
+    if (temp == 10){
+        n10 = n10 + 1
+    }
+    i = i + 1
+}
+var printDiv = document.getElementById("printDiv");
+printDiv.innerHTML = "<br/>"
+printDiv.innerHTML += ("0: " + n0 + "<br/>")
+printDiv.innerHTML += ("1: " + n1 + "<br/>")
+printDiv.innerHTML += ("2: " + n2 + "<br/>")
+printDiv.innerHTML += ("3: " + n3 + "<br/>")
+printDiv.innerHTML += ("4: " + n4 + "<br/>")
+printDiv.innerHTML += ("5: " + n5 + "<br/>")
+printDiv.innerHTML += ("6: " + n6 + "<br/>")
+printDiv.innerHTML += ("7: " + n7 + "<br/>")
+printDiv.innerHTML += ("8: " + n8 + "<br/>")
+printDiv.innerHTML += ("9: " + n9 + "<br/>")
+printDiv.innerHTML += ("10: " + n10 + "<br/>"+"<br/>") 
+
+printDiv.innerHTML += ("Total percentage: %" + ((n10+n9+n8+n7)/iterations)*100) 
+}
+
+
+
+
+
+
+
+    </script>
+
+<html>
