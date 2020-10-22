@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Wallace Simulation</title>
 
@@ -21,17 +22,17 @@
             <br/>
             <input id="runTimes"><br><br>
             <button onclick="run()">Run!</button>
-    
+
             <div id="printDiv"></div>
     </body>
 
 
     <script>
-        
+
 
         function run() {
 
-            
+
 var n0 = 0
 var n1 = 0
 var n2 = 0
@@ -56,7 +57,7 @@ while (i < iterations) {
         var random = Math.floor(Math.random() * 2)
         if (random == 1){
             temp = temp + 1
-            
+
         }
         times = times + 1
     }
@@ -107,9 +108,9 @@ printDiv.innerHTML += ("6: " + n6 + "<br/>")
 printDiv.innerHTML += ("7: " + n7 + "<br/>")
 printDiv.innerHTML += ("8: " + n8 + "<br/>")
 printDiv.innerHTML += ("9: " + n9 + "<br/>")
-printDiv.innerHTML += ("10: " + n10 + "<br/>"+"<br/>") 
+printDiv.innerHTML += ("10: " + n10 + "<br/>"+"<br/>")
 
-printDiv.innerHTML += ("Total percentage: %" + ((n10+n9+n8+n7)/iterations)*100) 
+printDiv.innerHTML += ("Total percentage: %" + ((n10+n9+n8+n7)/iterations)*100)
 }
 
 
